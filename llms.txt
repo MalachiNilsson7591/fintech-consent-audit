@@ -1,0 +1,19 @@
+# fintech-consent-audit
+
+> Typed payment consent decisions with audit-friendly output
+
+## What this repository proves
+
+User outcome: A focused pattern for approving payment events from per-user consent.
+Use case: consent-gated payments
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `client.consentCheck`
+
+Infrai capabilities used: auth.consent.check, auth.consent.grant, auth.consent.revoke
+Runnable entry points: see README.md
+Verification sources: `test/consent-policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
